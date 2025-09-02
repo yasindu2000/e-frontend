@@ -13,7 +13,7 @@ function DashBoard() {
   useEffect(() => {
     // Get user count
     axios
-      .get("http://localhost:5000/users/all", {
+      .get("https://e-backend-2-r0ho.onrender.com/users/all", {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       .then((res) => {
@@ -27,7 +27,7 @@ function DashBoard() {
 
     // Get order count from totalOrders in your existing API
     axios
-      .get("http://localhost:5000/orders/1/50", {
+      .get("https://e-backend-2-r0ho.onrender.com/orders/1/50", {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       .then((res) => {
@@ -41,7 +41,7 @@ function DashBoard() {
       });
 
     axios
-      .get("http://localhost:5000/products")
+      .get("https://e-backend-2-r0ho.onrender.com/products")
       .then((res) => {
         setProductCount(res.data.length);
         setLoadingProducts(false);

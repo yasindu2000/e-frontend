@@ -62,7 +62,7 @@ function UpdateProduct() {
             return;
         }
 
-        axios.put(`http://localhost:5000/products/${productId}`, productData, 
+        axios.put(`https://e-backend-2-r0ho.onrender.com/products/${productId}`, productData, 
             {
                 headers:{
                     Authorization: "Bearer "+token

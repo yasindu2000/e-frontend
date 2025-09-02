@@ -52,7 +52,7 @@ function Reviews() {
   useEffect(() => {
     if (loading) {
       axios
-        .get("http://localhost:5000/reviews")
+        .get("https://e-backend-2-r0ho.onrender.com/reviews")
         .then((res) => {
           setReviews(res.data);
           setLoading(false);
@@ -81,7 +81,7 @@ function Reviews() {
     };
 
     await axios
-      .post("http://localhost:5000/reviews", reviewData, {
+      .post("https://e-backend-2-r0ho.onrender.com/reviews", reviewData, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
@@ -112,7 +112,7 @@ function Reviews() {
     }
 
     axios
-      .delete(`http://localhost:5000/reviews/${id}`, {
+      .delete(`https://e-backend-2-r0ho.onrender.com/reviews/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(() => {
@@ -148,7 +148,7 @@ function Reviews() {
 
     axios
       .put(
-        `http://localhost:5000/reviews/${id}`,
+        `https://e-backend-2-r0ho.onrender.com/reviews/${id}`,
         { comment: updatedComment, rating: updatedRating },
         { headers: { Authorization: `Bearer ${token}` } }
       )

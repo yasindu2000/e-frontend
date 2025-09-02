@@ -11,7 +11,7 @@ function AdminReview() {
   // Fetch reviews
   const fetchReviews = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/reviews", {
+      const response = await axios.get("https://e-backend-2-r0ho.onrender.com/reviews", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -29,7 +29,7 @@ function AdminReview() {
     if (!window.confirm("Are you sure you want to delete this review?")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/reviews/${id}`, {
+      await axios.delete(`https://e-backend-2-r0ho.onrender.com/reviews/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

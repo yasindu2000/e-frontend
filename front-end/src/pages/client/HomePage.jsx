@@ -10,7 +10,7 @@ function HomePage() {
 
   // Fetch featured products (first 6 products for home page)
   useEffect(() => {
-    axios.get("http://localhost:5000/products").then((res) => {
+    axios.get("https://e-backend-2-r0ho.onrender.com/products").then((res) => {
       setProducts(res.data.slice(0, 6));
       setLoading(false);
     });

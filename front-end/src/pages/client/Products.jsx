@@ -13,13 +13,13 @@ function Products() {
   useEffect(() => {
     if (loading) {
       if (query === "") {
-        axios.get("http://localhost:5000/products").then((res) => {
+        axios.get("https://e-backend-2-r0ho.onrender.com/products").then((res) => {
           setProducts(res.data);
           setLoading(false);
         });
       } else {
         axios
-          .get(`http://localhost:5000/products/search/${query}`)
+          .get(`https://e-backend-2-r0ho.onrender.com/products/search/${query}`)
           .then((res) => {
             setProducts(res.data);
             setLoading(false);

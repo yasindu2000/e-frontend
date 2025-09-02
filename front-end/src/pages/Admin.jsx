@@ -29,7 +29,7 @@ function Admin() {
       return;
     }
     axios
-      .get("http://localhost:5000/users", {
+      .get("https://e-backend-2-r0ho.onrender.com/users", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {

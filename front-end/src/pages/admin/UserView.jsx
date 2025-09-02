@@ -12,7 +12,7 @@ function UserView() {
 
   const fetchUsers = () => {
     axios
-      .get("http://localhost:5000/users/all") // call backend API
+      .get("https://e-backend-2-r0ho.onrender.com/users/all") // call backend API
       .then((res) => {
         setUsers(res.data);
         setLoading(false);
@@ -36,7 +36,7 @@ function UserView() {
 
     if (window.confirm("Are you sure you want to delete this user?")) {
       axios
-        .delete(`http://localhost:5000/users/${userId}`, {
+        .delete(`https://e-backend-2-r0ho.onrender.com/users/${userId}`, {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then(() => {

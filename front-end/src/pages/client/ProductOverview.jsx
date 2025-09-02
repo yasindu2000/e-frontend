@@ -17,7 +17,7 @@ function ProductOverview() {
   useEffect(() => {
     if (status === "loading") {
       axios
-        .get(`http://localhost:5000/products/${params.productId}`)
+        .get(`https://e-backend-2-r0ho.onrender.com/products/${params.productId}`)
         .then((res) => {
           setProduct(res.data);
           setStatus("success");

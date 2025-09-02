@@ -55,7 +55,7 @@ function AddProductAdmin() {
             return;
         }
 
-        axios.post("http://localhost:5000/products", productData, 
+        axios.post("https://e-backend-2-r0ho.onrender.com/products", productData, 
             {
                 headers:{
                     Authorization: "Bearer "+token

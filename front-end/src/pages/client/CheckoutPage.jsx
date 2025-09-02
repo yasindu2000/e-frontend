@@ -21,7 +21,7 @@ function CheckoutPage() {
       return;
     }
     axios
-      .get("http://localhost:5000/users", {
+      .get("https://e-backend-2-r0ho.onrender.com/users", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
@@ -55,7 +55,7 @@ function CheckoutPage() {
     };
 
     try {
-      await axios.post("http://localhost:5000/orders", order, {
+      await axios.post("https://e-backend-2-r0ho.onrender.com/orders", order, {
         headers: { Authorization: `Bearer ${token}` },
       });
       toast.success("Order placed successfully");

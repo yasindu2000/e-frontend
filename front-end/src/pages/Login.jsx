@@ -18,7 +18,7 @@ function Login() {
 
    const login = useGoogleLogin({
         onSuccess: (response)=>{
-            axios.post("http://localhost:5000/users/google-login",{
+            axios.post("https://e-backend-2-r0ho.onrender.com/users/google-login",{
                 token : response.access_token
             }).then(
                 (response)=>{
@@ -41,7 +41,7 @@ function Login() {
 
   const handleSubmit = ()=>{
     
-    axios.post("http://localhost:5000/users/login",{
+    axios.post("https://e-backend-2-r0ho.onrender.com/users/login",{
       email : email,
       password : password
     }).then((response)=>{

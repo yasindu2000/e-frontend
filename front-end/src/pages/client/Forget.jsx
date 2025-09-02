@@ -15,7 +15,7 @@ function Forget() {
   async function sendOTP() {
     try {
       await axios.post(
-        "http://localhost:5000/users/send-otp",
+        "https://e-backend-2-r0ho.onrender.com/users/send-otp",
         { email: email }
       );
       toast.success("OTP sent successfully");
@@ -31,7 +31,7 @@ function Forget() {
     }
     try {
       await axios.post(
-        "http://localhost:5000/users/reset-password",
+        "https://e-backend-2-r0ho.onrender.com/users/reset-password",
         {
           email: email,
           otp: otp,

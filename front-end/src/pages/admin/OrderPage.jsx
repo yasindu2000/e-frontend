@@ -17,7 +17,7 @@ function OrderPage() {
   useEffect(() => {
     if (loading) {
       axios
-        .get("http://localhost:5000/orders/" + page + "/" + limit, {
+        .get("https://e-backend-2-r0ho.onrender.com/orders/" + page + "/" + limit, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

@@ -12,7 +12,7 @@ function ProductAdmin() {
 
   useEffect(() => {
     if (isLoading) {
-      axios.get("http://localhost:5000/products")
+      axios.get("https://e-backend-2-r0ho.onrender.com/products")
         .then((res) => {
           setProducts(res.data);
           setIsLoading(false);
@@ -56,7 +56,7 @@ function ProductAdmin() {
                     onClick={() => {
                       const token = localStorage.getItem("token");
                       if (!token) { navigate("/login"); return; }
-                      axios.delete(`http://localhost:5000/products/${product.productId}`, {
+                      axios.delete(`https://e-backend-2-r0ho.onrender.com/products/${product.productId}`, {
                         headers: { Authorization: `Bearer ${token}` },
                       })
                       .then(() => { toast.success("Product deleted successfully"); setIsLoading(true); })

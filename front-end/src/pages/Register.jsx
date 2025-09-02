@@ -32,7 +32,7 @@ async function handleSubmit(){
     role: role
   }
 
-  axios.post("http://localhost:5000/users",userData).then(
+  axios.post("https://e-backend-2-r0ho.onrender.com/users",userData).then(
             (res)=>{
                 
                 toast.success("registered successfully");
