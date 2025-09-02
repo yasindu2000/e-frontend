@@ -67,7 +67,7 @@ function Login() {
     })
   }
   return (
-    <div className="w-full h-screen bg-white bg-cover bg-center flex justify-center items-center">
+    <div className="w-full h-full bg-white bg-cover bg-center flex justify-center items-center">
 			    
       <div className="w-[350px] h-[450px]  md:w-[450px] md:h-[550px] backdrop-blur-sm shadow-2xl shadow-gray-400 rounded-[30px]  gap-[20px] text-gray-800 flex flex-col items-center justify-center">
        <Link to={"/"} className='fixed right-[30px] top-[30px] text-gray-600 text-3xl ml-[90%]  cursor-pointer '  >

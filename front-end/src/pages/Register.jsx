@@ -50,7 +50,7 @@ async function handleSubmit(){
 
 }
   return (
-    <div className="w-full h-screen bg-white bg-cover bg-center flex justify-center items-center">
+    <div className="w-full h-full bg-white bg-cover bg-center flex justify-center items-center">
       <div className="w-[500px] h-[650px] backdrop-blur-sm shadow-2xl rounded-[30px] gap-[5px] shadow-gray-500 text-gray-800 flex flex-col items-center justify-center">
         <h1 className="absolute top-[20px] text-3xl font-bold text-center my-1">
           Register
@@ -121,19 +121,7 @@ async function handleSubmit(){
         </div>
 
         {/* Role (select user/admin) */}
-        <div className="w-[300px] flex flex-col">
-          <span className="text-lg">Role</span>
-          <select
-            name="role"
-            value={role}
-            onChange={(e)=>{setRole(e.target.value)}}
-            
-            className="w-[300px] h-[40px] border border-gray-300 shadow-sm rounded-xl focus:outline-none"
-          >
-            <option value="user">User</option>
-            <option value="admin">Admin</option>
-          </select>
-        </div>
+        
 
         
 
