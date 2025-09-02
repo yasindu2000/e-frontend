@@ -32,7 +32,7 @@ function Products() {
 
     <>
     <div className="w-full h-full   ">
-      <div className="p-4 md:pr-20 md:pl-20">
+      <div className="p-4 pl-5 pr-5 md:pr-20 md:pl-20">
       {/* Search Bar */}
       <div className="relative w-full sm:w-[400px] mx-auto">
         <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
