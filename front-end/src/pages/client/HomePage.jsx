@@ -33,8 +33,8 @@ function HomePage() {
       </section>
 
       {/* Featured Products */}
-      <section className="py-16 px-4 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-8 text-center">
+      <section className="py-16 pl-10  max-w-6xl mx-auto">
+        <h2 className="text-3xl mr-8 font-semibold text-gray-800 mb-8 text-center">
           Featured Products
         </h2>
 
